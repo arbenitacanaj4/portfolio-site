@@ -1,0 +1,101 @@
+/* Contact Section Styles */
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.form-control {
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+}
+
+.form-control::placeholder {
+  color: var(--text-light);
+}
+
+/* Contact Info Sidebar */
+.contact-info {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.contact-info h4 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-info h5 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  width: 20px;
+  opacity: 0.9;
+}
+
+.contact-item span {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.contact-info hr {
+  border-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem 0;
+}
+
+.contact-info .social-links a {
+  color: white;
+  font-size: 1.3rem;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.contact-info .social-links a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Form Animation Effects */
+.form-control:focus {
+  transform: scale(1.02);
+}
+
+.contact-form .btn-primary-custom {
+  margin-top: 1rem;
+}
+
+/* Responsive Contact */
+@media (max-width: 991px) {
+  .contact-info {
+    margin-top: 2rem;
+  }
+}

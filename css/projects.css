@@ -1,0 +1,77 @@
+/* Projects Section Styles */
+.projects {
+  background: var(--bg-light);
+}
+
+.project-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card .card-body {
+  padding: 1.5rem;
+}
+
+.project-card .card-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.project-card .card-text {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  color: var(--secondary-color);
+}
+
+.project-links a i {
+  font-size: 0.8rem;
+}
+
+/* Project Card Animation on Scroll */
+.project-card.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.project-card.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,873 @@
+/* More About Me Page Styles */
+
+/* Hero Section */
+.more-about-hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  padding: 120px 0 80px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.more-about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.more-about-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.more-about-hero h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.more-about-hero .lead {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.main-content {
+  background: #fefefe;
+  position: relative;
+}
+
+.content-section {
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.content-section:last-child {
+  border-bottom: none;
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.section-header h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+/* Hobby Grid */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.hobby-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 154, 158, 0.1);
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.hobby-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hobby-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.hobby-card p {
+  color: #718096;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Book Cards */
+.book-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-cover {
+  height: 200px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.book-cover.tech-book {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.book-cover.ml-book {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.book-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.book-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-author {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.book-content {
+  padding: 1.5rem;
+}
+
+.book-content h5 {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.book-author-text {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.book-description {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Interests Visual */
+.interests-visual {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interest-bubble {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  min-width: 120px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.interest-bubble:hover {
+  transform: scale(1.1);
+}
+
+.interest-bubble.psychology {
+  top: 15%;
+  left: 15%;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+}
+
+.interest-bubble.cultures {
+  top: 15%;
+  right: 15%;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #2d3748;
+}
+
+.interest-bubble.languages {
+  bottom: 15%;
+  left: 15%;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #2d3748;
+}
+
+.interest-bubble.connection {
+  bottom: 15%;
+  right: 15%;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #2d3748;
+}
+
+.interest-bubble.philosophy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  z-index: 10;
+}
+
+.bubble-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.interest-bubble span {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Languages */
+.languages-container {
+  margin-bottom: 3rem;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.language-item:hover {
+  transform: translateX(5px);
+}
+
+.language-item.native {
+  border-left-color: #d4af37;
+}
+
+.language-item.fluent {
+  border-left-color: #2c3e50;
+}
+
+.language-item.intermediate {
+  border-left-color: #34495e;
+}
+
+.language-item.beginner {
+  border-left-color: #7f8c8d;
+}
+
+.language-flag {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+
+.language-info h5 {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.level {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.language-info p {
+  color: #718096;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Future Languages */
+.future-languages {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.future-languages h4 {
+  margin-bottom: 1rem;
+  font-family: "Crimson Text", serif;
+}
+
+.future-lang-tags {
+  margin-bottom: 1rem;
+}
+
+.future-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin: 0 0.5rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.future-text {
+  margin: 0;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Philosophy Section */
+.philosopher-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-left: 4px solid transparent;
+}
+
+.philosopher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.philosopher-quote {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: rgba(255, 154, 158, 0.3);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-family: "Crimson Text", serif;
+  line-height: 1;
+}
+
+.philosopher-quote p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 2rem;
+  font-family: "Crimson Text", serif;
+}
+
+.philosopher-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.philosopher-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.philosopher-avatar.stoic {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.philosopher-avatar.existential {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.philosopher-avatar.absurd {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.philosopher-avatar.mystical {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.philosopher-details h5 {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+  font-family: "Crimson Text", serif;
+  font-size: 1.3rem;
+}
+
+.philosopher-era {
+  color: #718096;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.philosopher-impact {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.philosopher-impact em {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+/* Add border colors on hover */
+.philosopher-card:hover {
+  border-left-color: #d4af37;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  padding: 60px 0;
+  border-radius: 30px;
+  margin: 40px 0;
+}
+
+.cta-content h3 {
+  font-family: "Crimson Text", serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: #ecf0f1;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-warm-primary {
+  background: linear-gradient(135deg, #2c3e50, #d4af37);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
+}
+
+.btn-warm-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.4);
+  color: white;
+}
+
+/* Philosophy Section Styles - Compact Cards */
+.philosophy-intro {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.philosophy-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.08);
+  border-left: 4px solid var(--accent-color);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.12);
+}
+
+.philosophy-card .philosophy-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.philosophy-card h5 {
+  color: var(--primary-color);
+  font-family: "Crimson Text", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.philosophy-card blockquote {
+  background: var(--warm-grey);
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  border-left: 3px solid var(--accent-color);
+}
+
+.philosophy-card p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.philosophy-synthesis {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--warm-grey);
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.philosophy-synthesis p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin: 0;
+  font-weight: 400;
+}
+
+.philosophy-synthesis strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Interest Items - New Clean Style */
+.interest-item {
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+  transform: translateY(-2px);
+}
+
+.interest-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.interest-item h6 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .philosophy-card {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .philosophy-card h5 {
+    font-size: 1.1rem;
+  }
+  
+  .philosophy-card blockquote {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .philosophy-synthesis {
+    padding: 1.2rem;
+  }
+  
+  .interest-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Volunteering Section Styles */
+.volunteering-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.volunteer-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.08);
+  border-left: 4px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.volunteer-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.12);
+}
+
+.volunteer-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.volunteer-content h5 {
+  color: var(--primary-color);
+  font-family: "Crimson Text", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.volunteer-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .volunteer-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  
+  .volunteer-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+}
+
+.btn-warm-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-warm-secondary:hover {
+  background: #ffffff;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer */
+.warm-footer {
+  background: #2d3748;
+  color: white;
+  padding: 2rem 0;
+}
+
+.warm-footer .social-links a {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.warm-footer .social-links a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  color: #fecfef;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .more-about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hobby-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-visual {
+    height: 300px;
+  }
+
+  .interest-bubble {
+    position: relative;
+    margin: 0.5rem;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .interest-bubble.psychology,
+  .interest-bubble.cultures,
+  .interest-bubble.languages,
+  .interest-bubble.connection {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-warm-primary,
+  .btn-warm-secondary {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .philosopher-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .philosopher-avatar {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+}
